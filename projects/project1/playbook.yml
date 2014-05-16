@@ -1,0 +1,11 @@
+---
+
+- name: Tests including roles from a path specified in an ansible.cfg file
+  hosts:
+  - 127.0.0.1
+  connection: local
+  gather_facts: false
+
+  roles:
+    - { role: role1 }
+    - { role: role2 }
